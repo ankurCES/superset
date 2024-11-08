@@ -49,6 +49,7 @@ const titleStyles = (theme: SupersetTheme) => css`
 
   & .dynamic-title,
   & .dynamic-title-input {
+    color: ${theme.colors.darkmode.text};
     display: inline-block;
     max-width: 100%;
     overflow: hidden;

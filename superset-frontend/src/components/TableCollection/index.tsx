@@ -53,7 +53,7 @@ export const Table = styled.table`
       background: ${theme.colors.grayscale.light5};
       position: sticky;
       top: 0;
-
+      color: ${theme.colors.darkmode.text};
       &:first-of-type {
         padding-left: ${theme.gridUnit * 4}px;
       }
@@ -152,10 +152,11 @@ export const Table = styled.table`
         font-size: ${theme.typography.sizes.xl}px;
         display: flex;
       }
-
+      background-color: ${theme.colors.darkmode.row};
+      color: ${theme.colors.darkmode.text};
       &:hover {
-        background-color: ${theme.colors.secondary.light5};
-
+        background-color: ${theme.colors.darkmode.highrow};
+        color: ${theme.colors.darkmode.hightext};
         .actions {
           opacity: 1;
           transition: opacity ease-in ${theme.transitionTiming}s;

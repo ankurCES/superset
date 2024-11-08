@@ -21,6 +21,7 @@ import { css, SupersetTheme } from '@superset-ui/core';
 export const headerStyles = (theme: SupersetTheme) => css`
   body {
     h1 {
+      color: ${theme.colors.darkmode.hightext};
       font-weight: ${theme.typography.weights.bold};
       line-height: 1.4;
       font-size: ${theme.typography.sizes.xxl}px;
@@ -30,6 +31,7 @@ export const headerStyles = (theme: SupersetTheme) => css`
     }
 
     h2 {
+      color: ${theme.colors.darkmode.hightext};
       font-weight: ${theme.typography.weights.bold};
       line-height: 1.4;
       font-size: ${theme.typography.sizes.xl}px;
@@ -41,6 +43,7 @@ export const headerStyles = (theme: SupersetTheme) => css`
     h4,
     h5,
     h6 {
+      color: ${theme.colors.darkmode.hightext};
       font-weight: ${theme.typography.weights.bold};
       line-height: 1.4;
       font-size: ${theme.typography.sizes.l}px;
@@ -56,6 +59,7 @@ export const chartHeaderStyles = (theme: SupersetTheme) => css`
   .header-title a {
     margin: ${theme.gridUnit / 2}px;
     padding: ${theme.gridUnit / 2}px;
+    color: ${theme.colors.darkmode.text};
   }
   .header-controls {
     &,

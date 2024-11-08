@@ -55,6 +55,16 @@ const BackgroundStyleOption = styled.div`
       }
     }
 
+    &.background--dark {
+      padding-left: 0;
+      background: transparent;
+
+      &:before {
+        background: ${theme.colors.secondary.dark2};
+        border: 1px solid ${theme.colors.secondary.dark3};
+      }
+    }
+
     /* Create the transparent rect icon */
     &.background--transparent:before {
       background-image: linear-gradient(

@@ -165,6 +165,10 @@ const DashboardContentWrapper = styled.div`
       .background--white {
         background-color: ${theme.colors.grayscale.light5};
       }
+
+      .background--dark {
+        background-color: ${theme.colors.secondary.dark2};
+      }
     }
     &.dashboard--editing {
       .grid-row:after,

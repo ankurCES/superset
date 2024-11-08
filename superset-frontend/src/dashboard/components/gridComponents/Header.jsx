@@ -111,6 +111,13 @@ const HeaderStyles = styled.div`
       padding-left: ${theme.gridUnit * 4}px;
       padding-right: ${theme.gridUnit * 4}px;
     }
+
+    .background--dark&,
+    &.background--dark,
+    .dashboard-component-tabs & {
+      padding-left: ${theme.gridUnit * 4}px;
+      padding-right: ${theme.gridUnit * 4}px;
+    }
   `}
 `;
 

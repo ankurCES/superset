@@ -17,7 +17,11 @@
  * under the License.
  */
 import { t } from '@superset-ui/core';
-import { BACKGROUND_TRANSPARENT, BACKGROUND_WHITE } from './constants';
+import {
+  BACKGROUND_TRANSPARENT,
+  BACKGROUND_WHITE,
+  BACKGROUND_DARK,
+} from './constants';
 
 export default [
   {
@@ -29,5 +33,10 @@ export default [
     value: BACKGROUND_WHITE,
     label: t('White'),
     className: 'background--white',
+  },
+  {
+    value: BACKGROUND_DARK,
+    label: t('Dark'),
+    className: 'background--dark',
   },
 ];

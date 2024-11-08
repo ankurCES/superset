@@ -107,11 +107,16 @@ const StyledHeader = styled.header`
           float: none;
         }
       }
+      .ant-menu-horizontal {
+        background-color: ${theme.colors.darkmode.highrow};
+      }
       .ant-menu-horizontal .ant-menu-item {
         height: 100%;
         line-height: inherit;
+        background-color: ${theme.colors.darkmode.highrow};
       }
       .ant-menu > .ant-menu-item > a {
+        color: ${theme.colors.darkmode.text};
         padding: ${theme.gridUnit * 4}px;
       }
       @media (max-width: 767px) {
@@ -134,8 +139,8 @@ const StyledHeader = styled.header`
       }
       .ant-menu-item a {
         &:hover {
-          color: ${theme.colors.grayscale.dark1};
-          background-color: ${theme.colors.primary.light5};
+          color: ${theme.colors.darkmode.hightext};
+          background-color: ${theme.colors.darkmode.row};
           border-bottom: none;
           margin: 0;
           &:after {
@@ -149,6 +154,12 @@ const StyledHeader = styled.header`
 const globalStyles = (theme: SupersetTheme) => css`
   .ant-menu-submenu.ant-menu-submenu-popup.ant-menu.ant-menu-light.ant-menu-submenu-placement-bottomLeft {
     border-radius: 0px;
+  }
+  .ant-menu-submenu-title {
+    color: ${theme.colors.darkmode.text};
+    &:hover {
+      color: ${theme.colors.darkmode.hightext};
+    }
   }
   .ant-menu-submenu.ant-menu-submenu-popup.ant-menu.ant-menu-light {
     border-radius: 0px;
@@ -171,16 +182,21 @@ const globalStyles = (theme: SupersetTheme) => css`
     }
   }
   .ant-menu-horizontal > .ant-menu-item:has(> .is-active) {
-    color: ${theme.colors.primary.base};
+    color: ${theme.colors.darkmode.hightext};
     border-bottom-color: ${theme.colors.primary.base};
     & > a {
-      color: ${theme.colors.primary.base};
+      color: ${theme.colors.darkmode.hightext};
+    }
+    &:hover {
+      color: ${theme.colors.darkmode.hightext};
     }
   }
   .ant-menu-vertical > .ant-menu-item:has(> .is-active) {
-    background-color: ${theme.colors.primary.light5};
+    color: ${theme.colors.darkmode.hightext};
+    background-color: ${theme.colors.darkmode.row};
     & > a {
-      color: ${theme.colors.primary.base};
+      background-color: ${theme.colors.darkmode.row};
+      color: ${theme.colors.darkmode.hightext};
     }
   }
 `;

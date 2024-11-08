@@ -80,6 +80,14 @@ const defaultTheme = {
       light4: '#ECEEF2',
       light5: '#F5F5F8',
     },
+    darkmode: {
+      lightrow: '#79CADE',
+      row: '#0C3C4F',
+      highrow: '#1D4858',
+      text: '#FFFFFF',
+      darktext: '#4D8CBE',
+      hightext: '#94C1AF',
+    },
     grayscale: {
       base: '#666666',
       dark1: '#323232',
@@ -88,7 +96,7 @@ const defaultTheme = {
       light2: '#E0E0E0',
       light3: '#F0F0F0',
       light4: '#F7F7F7',
-      light5: '#FFFFFF',
+      light5: '#375A69',
     },
     error: {
       base: '#E04355',

@@ -52,6 +52,7 @@ export const LARGE_HEADER = 'LARGE_HEADER';
 // Style types
 export const BACKGROUND_WHITE = 'BACKGROUND_WHITE';
 export const BACKGROUND_TRANSPARENT = 'BACKGROUND_TRANSPARENT';
+export const BACKGROUND_DARK = 'BACKGROUND_DARK';
 
 // undo-redo
 export const UNDO_LIMIT = 50;

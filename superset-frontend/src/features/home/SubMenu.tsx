@@ -36,6 +36,7 @@ const StyledHeader = styled.div`
     margin-right: ${({ theme }) => theme.gridUnit * 3}px;
     text-align: left;
     font-size: 18px;
+    color: ${({ theme }) => theme.colors.darkmode.text};
     padding: ${({ theme }) => theme.gridUnit * 3}px;
     display: inline-block;
     line-height: ${({ theme }) => theme.gridUnit * 9}px;
